@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@400;700&display=swap');
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    height: 50px;
+}
+
+.navigation-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navigation-link {
+    display: block;
+    padding: 24px 19px;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+}
+
+.main {
+    max-width: 1600px;
+    margin: 50px 50px 50px 50px;
+}
+
+.heading-main {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+}
+
+.project {
+    display: grid; 
+    grid-auto-flow: column; 
+    grid-template-columns: 30% 30% 30%; 
+    gap: 20px 20px; 
+    grid-template-areas: 
+        "project-block-1 project-block-2 project-block-3"
+        "project-block-4 project-block-4 project-block-5"
+        "project-block-6 project-block-7 project-block-7";
+    margin: 20px 0;
+    justify-content: space-between;
+}
+
+.project-block {
+    display:flex;
+    flex-direction: column-reverse;
+    text-decoration:none;
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 16/9;
+}
+
+.project-block:nth-of-type(4) {
+    aspect-ratio: 3.85;
+}
+
+.project-block:nth-of-type(7) {
+    aspect-ratio: 3.85;
+}
+
+.project_name {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    color: white;
+    padding: 0 0 20px 20px;
+}
+
+.project_name-big {
+    font-size: 35px;
+}
+
+.project-block-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(/images/project-1.jpg);
+    grid-area: project-block-1;
+}
+
+.project-block-1:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(/images/project-1.jpg);
+}
+
+.project-block-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(/images/project-2.jpg);
+    grid-area: project-block-2;
+}
+
+.project-block-2:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(/images/project-2.jpg);
+}
+
+.project-block-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(/images/project-3.jpg);
+    grid-area: project-block-3;
+}
+
+.project-block-3:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(/images/project-3.jpg);
+}
+
+.project-block-4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(/images/project-4.jpg);
+    grid-area: project-block-4;
+}
+
+.project-block-4:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(/images/project-4.jpg);
+}
+
+.project-block-5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(/images/project-5.jpg);
+    grid-area: project-block-5;
+}
+
+.project-block-5:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(/images/project-5.jpg);
+}
+
+.project-block-6 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(/images/project-6.jpg);
+    grid-area: project-block-6;
+}
+
+.project-block-6:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(/images/project-6.jpg);
+}
+
+.project-block-7 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(/images/project-7.jpg);
+    grid-area: project-block-7;
+}
+
+.project-block-7:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(/images/project-7.jpg);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.social img {
+    width: 25px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.contact-info a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.info {
+    font-size: 16px;
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .heading-main {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .main {
+        max-width: 1000px;
+        margin: 20px 20px 20px 20px;
+    }
+
+    .project {
+        display: grid; 
+        grid-auto-flow: column; 
+        grid-template-columns: 40% 40%; 
+        gap: 20px 5px; 
+        grid-template-areas: 
+            "project-block-1 project-block-2"
+            "project-block-3 project-block-4"
+            "project-block-5 project-block-6"
+            "project-block-7 .";
+        margin: 20px 0;
+        justify-content: space-around;
+    }
+    
+    .project-block {
+        display:flex;
+        flex-direction: column-reverse;
+        text-decoration:none;
+        background-size: cover;
+        background-position: center;
+        aspect-ratio: 16/9;
+    }
+    
+    .project-block:nth-of-type(4) {
+        aspect-ratio: 16/9;
+    }
+    
+    .project-block:nth-of-type(7) {
+        aspect-ratio: 16/9;
+    }
+    
+    .project-block-1 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(/images/project-1.jpg);
+        grid-area: project-block-1;
+    }
+    
+    .project-block-1:hover {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(/images/project-1.jpg);
+    }
+    
+    .project-block-2 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(/images/project-2.jpg);
+        grid-area: project-block-2;
+    }
+    
+    .project-block-2:hover {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(/images/project-2.jpg);
+    }
+    
+    .project-block-3 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(/images/project-3.jpg);
+        grid-area: project-block-3;
+    }
+    
+    .project-block-3:hover {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(/images/project-3.jpg);
+    }
+    
+    .project-block-4 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(/images/project-4.jpg);
+        grid-area: project-block-4;
+    }
+    
+    .project-block-4:hover {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(/images/project-4.jpg);
+    }
+    
+    .project-block-5 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(/images/project-5.jpg);
+        grid-area: project-block-5;
+    }
+    
+    .project-block-5:hover {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(/images/project-5.jpg);
+    }
+    
+    .project-block-6 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(/images/project-6.jpg);
+        grid-area: project-block-6;
+    }
+    
+    .project-block-6:hover {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(/images/project-6.jpg);
+    }
+    
+    .project-block-7 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(/images/project-7.jpg);
+        grid-area: project-block-7;
+    }
+    
+    .project-block-7:hover {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(/images/project-7.jpg);
+    }
+    
+
+    .project_name {
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 20px;
+        color: white;
+        padding: 0 0 20px 20px;
+    }
+    
+    .project_name-big {
+        font-size: 25px;
+    }
+
+}
+
+
+@media screen and (max-width: 680px) {
+
+    .logo {
+        width: 75px;
+        height: 25px;
+        margin-top: 10px;
+    }
+    
+    .navigation-link {
+        display: block;
+        padding: 5px;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        color: #000000;
+        text-decoration: none;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navigation-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .heading-main {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 20px;
+    }
+
+    .main {
+        max-width: 600px;
+        margin: 20px 20px 20px 20px;
+    }
+
+    .project {
+        display: grid; 
+        grid-auto-flow: column; 
+        grid-template-columns: 70%; 
+        gap: 20px 0; 
+        grid-template-areas: 
+            "project-block-1"
+            "project-block-2"
+            "project-block-3" 
+            "project-block-4"
+            "project-block-5" 
+            "project-block-6"
+            "project-block-7";
+        margin: 20px 0;
+        justify-content: center;
+    }
+    
+    .project-block {
+        display:flex;
+        flex-direction: column-reverse;
+        text-decoration:none;
+        background-size: cover;
+        background-position: center;
+        aspect-ratio: 16/9;
+    }
+    
+    .project-block:nth-of-type(4) {
+        aspect-ratio: 16/9;
+    }
+    
+    .project-block:nth-of-type(7) {
+        aspect-ratio: 16/9;
+    }
+    
+    .project-block-1 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(/images/project-1.jpg);
+        grid-area: project-block-1;
+    }
+    
+    .project-block-1:hover {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(/images/project-1.jpg);
+    }
+    
+    .project-block-2 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(/images/project-2.jpg);
+        grid-area: project-block-2;
+    }
+    
+    .project-block-2:hover {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(/images/project-2.jpg);
+    }
+    
+    .project-block-3 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(/images/project-3.jpg);
+        grid-area: project-block-3;
+    }
+    
+    .project-block-3:hover {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(/images/project-3.jpg);
+    }
+    
+    .project-block-4 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(/images/project-4.jpg);
+        grid-area: project-block-4;
+    }
+    
+    .project-block-4:hover {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(/images/project-4.jpg);
+    }
+    
+    .project-block-5 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(/images/project-5.jpg);
+        grid-area: project-block-5;
+    }
+    
+    .project-block-5:hover {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(/images/project-5.jpg);
+    }
+    
+    .project-block-6 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(/images/project-6.jpg);
+        grid-area: project-block-6;
+    }
+    
+    .project-block-6:hover {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(/images/project-6.jpg);
+    }
+    
+    .project-block-7 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(/images/project-7.jpg);
+        grid-area: project-block-7;
+    }
+    
+    .project-block-7:hover {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(/images/project-7.jpg);
+    }
+    
+    .project_name {
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 20px;
+        color: white;
+        padding: 0 0 20px 20px;
+    }
+    
+    .project_name-big {
+        font-size: 25px;
+    }
+
+}
